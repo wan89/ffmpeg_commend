@@ -21,8 +21,9 @@ ffmpeg -i 01_kpop_cover_kor.mp4 -vcodec h264 -movflags +faststart -an 01_kpop_co
 ffmpeg -i a.mp4 -vf scale=1280x720 -vcodec h264 -movflags +faststart -an bb.mp4
 ```
 
+--- 폴더 전체 ---
+
 ```
-폴더 전체
 for file in *.mp4
 
 do
@@ -31,10 +32,6 @@ ffmpeg -i "$file" -vcodec h264 -movflags +faststart "./dist/${file%.*}.mp4"
 
 done
 ```
-
-
-```
-
 → mp4 압축
 
 
