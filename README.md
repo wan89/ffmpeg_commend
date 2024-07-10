@@ -5,7 +5,6 @@
 ```
 ffmpeg -i input-file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output-file.webm
 ```
-
 → 압축율 좋으나 홍조현상
 
 
@@ -13,7 +12,6 @@ ffmpeg -i input-file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output-file.
 ```
 ffmpeg -i input.mp4 -c:v libvpx-vp9 -b:v 1M -c:a libvorbis output.webm
 ```
-
 → webm 원본에 가깝게 압축
 
 
